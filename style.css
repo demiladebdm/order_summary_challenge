@@ -1,122 +1,116 @@
-html{
+html {
     box-sizing: border-box;
 }
  
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: hsl(225, 100%, 94%);
     background-image: url(./order-summary-component-main/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
 }
 
 
-.inner{
+.inner_container {
     position: relative;
     background-color: white;
     top: 100px;
     margin: 0 auto;
     width: 50vh;
-    border: 1px solid black;
-    border-radius: 0.5em;
-    border-style: none;
-
+    border-radius: 1.0em;
 }
 
-.hh {
-    /* position: relative; */
-    /* top: 0;
-    margin: 0;
-    padding: 0;
-    border: 0; */
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
+
+.image_header {
+    border-top-left-radius: 1.0em;
+    border-top-right-radius: 1.0em;
 }
 
-.he {
-    display: flex;
-    justify-content: center;
-}
-
-.bo {
-    text-transform: thin;
+.introduction {
     text-align: center;
-    padding: 0 0.5em;
+    font-size: 1.0em;
+    padding: 0 1.0em;
 }
 
-.plan {
+.order_header {
+    text-decoration: solid;
+}
+
+.order_border {
     display: flex;
-    padding: 0.5em;
-    background-color: hsl(226, 45%, 94%);
+    padding: 0 5em;
+}
+
+.plan_box {
+    display: flex;
+    padding: 0 0.5em;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F9FE;
     border: none;
-    color: black;
     height: 10vh;
-    /* text-align: center; */
+    width: 80%;
     text-decoration: none;
-    /* display: inline-flexbox; */
-    /* font-size: 16px; */
-    margin: 2.5em;
+    margin: 1.5em;
     border-radius: 0.5em;
 }
 
-.st {
-    display: flex;
-    margin-top: 0;
-    padding: -1.5em;
+.music_icon {
+    margin-left: 5px;
 }
 
-.p {
-    padding: 0.5em;
-    display: block;
+.annual_plan {
+    width: 100px;
+    margin: 0;
+    margin-left: -20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+span {
+    display: block;      
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+    margin-top: 3px;
+    font-family: sans-serif;
 
 }
 
-.pp {
-    margin-top: 10px;
-    /* display: flex;
-    justify-self: left; */
-    /* align-items: center;
-    padding: -60px; */
+.link /* unvisited link */ {
+   text-decoration-color: blue;
+   cursor: pointer;
+   /* font-family: 'Courier New', Courier, monospace; */
+   font-size: 14px;
+   color: blue;
 }
 
-.link {
-    position: relative;
-    margin: 20px 0px 0px 25px;
-    /* left: 1px; */
-    /* display: flex;
-    align-items: center;     */
-    /* text-align: right; */
-}
-
-/* unvisited link */
-a:link {
-    color: black;
-    text-decoration: none;
-  }
-  
   /* visited link */
-  a:visited {
-    color: blue;
+.link:visited {
+    color: rgb(105, 33, 78);
     text-decoration: none;
   }
   
   /* mouse over link */
-  a:hover {
-    color: hotpink;
+.link:hover {
+    color: blue;
     text-decoration: underline;
   }
   
   /* selected link */
-  a:active {
+.link:active {
     color: green;
     text-decoration: underline;
   }
 
-.Payment {
+.payment {
     display: flex;
     justify-content: center;
 }
-.button {
+button {
     display: flex;
     background-color: #26289c;
     border: none;
@@ -127,12 +121,17 @@ a:link {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    /* margin: 2.5em; */
     cursor: pointer;
-    border-radius: 0.5em;
-  }
+    border-radius: 0.5em;   
+}
 
 .cancel {
+    border: none;
     padding: 0.5em;
-    text-align: center;
+    text-align:center;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom-left-radius: 1.0em;
+    border-bottom-right-radius: 1.0em;
+
 }
