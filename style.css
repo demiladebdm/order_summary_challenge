@@ -21,6 +21,8 @@ body {
     margin: 0 auto;
     width: 50vh;
     border-radius: 1.0em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(156, 156, 156);
 }
 
 
@@ -36,12 +38,21 @@ body {
 }
 
 .order_header {
+    text-align: center;
     text-decoration: solid;
+    color: #21252a;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
-.order_border {
+.order_body {
     display: flex;
-    padding: 0 5em;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.5em;
+    color: #767E92;
+    font-family: sans-serif;
 }
 
 .plan_box {
@@ -67,7 +78,8 @@ body {
     margin: 0;
     margin-left: -20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    color: #21252a;
 }
 
 span {
@@ -77,15 +89,14 @@ span {
     color: grey;
     margin-top: 3px;
     font-family: sans-serif;
-
 }
 
 .link /* unvisited link */ {
    text-decoration-color: blue;
-   cursor: pointer;
-   /* font-family: 'Courier New', Courier, monospace; */
+   cursor: pointer; 
    font-size: 14px;
    color: blue;
+   font-family: sans-serif;
 }
 
   /* visited link */
@@ -109,29 +120,42 @@ span {
 .payment {
     display: flex;
     justify-content: center;
+    margin-top: 0.5em;
+    /* margin-left: 10%; */
+    /* width: 80%; */
 }
 button {
-    display: flex;
-    background-color: #26289c;
-    border: none;
+    width: 82%;
+    border: none; 
+    background-color: #382AE1;
     color: white;
-    padding: 0.5em;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 13px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 400;
     cursor: pointer;
-    border-radius: 0.5em;   
+    border-radius: 0.5em;    
+    box-shadow: 5px 13px 14px rgba(163, 163, 163, 0.52);
+    font-family: 'Red Hat Display', sans-serif;  
 }
 
-.cancel {
-    border: none;
+.button:active .button:hover {
+    background-color: #766CF1;
+}
+
+.cancel_order {
+    margin-top: 1.0em;
+    margin-bottom: 2.0em;
+    color: #767E92;
     padding: 0.5em;
     text-align:center;
+    font-size: 13px;
+    font-weight: 550;
     cursor: pointer;
-    text-decoration: none;
-    border-bottom-left-radius: 1.0em;
-    border-bottom-right-radius: 1.0em;
+    font-family: sans-serif;
+}
 
+.cancel_order:active .cancel_order:hover {
+    color: rgb(31, 28, 28);
 }
